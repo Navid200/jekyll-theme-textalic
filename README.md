@@ -114,4 +114,4 @@ See [Jekyll doc on deployment](https://jekyllrb.com/docs/deployment/)
 
 ## That's it
 
-Happy blogging!
+Happy blogging!  
