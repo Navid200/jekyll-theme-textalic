@@ -1,5 +1,5 @@
 ---
-title: Apple
+title: Apple2
 category: doc
 tags: [tutorial, textalic]
 ---
