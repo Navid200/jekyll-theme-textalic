@@ -1,17 +1,19 @@
 ---
-layout: null
+title: search
+layout: none
+search: exclude
 ---
 [
   {% for page in site.pages %}
+  {% unless page.search == "exclude" %}
     {
-  {% if page.title != nil %}
       "title"    : "{{ page.title | escape }}",
       "category" : "{{ page.category }}",
       "tags"     : "{{ page.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ page.url }}",
       "date"     : "{{ page.date }}",
       "content": {{ page.content | jsonify }}
-{% endif %}
-    } {% unless forloop.last %},{% endunless %}
+    },
+{% endunless %}
   {% endfor %}
 ]
