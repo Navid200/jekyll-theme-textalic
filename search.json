@@ -2,7 +2,7 @@
 layout: null
 ---
 [
-  {% for post in site.pages %}
+  {% for page in site.pages %}
     {
   {% if page.title != nil %}
       "title"    : "{{ page.title | escape }}",
